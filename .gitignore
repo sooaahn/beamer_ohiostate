@@ -1,4 +1,11 @@
 *.log
 *.gz
-slides/*.tex
-slides/*.pdf
+slides.aux
+slides.bbl
+slides.bcf
+slides.blg
+slides.log
+slides.nav
+slides.out
+slides.run.xml
+slides.toc
