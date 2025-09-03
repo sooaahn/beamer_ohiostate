@@ -1,0 +1,36 @@
+\mode<presentation>
+
+\definecolor{scarlet}{RGB}{150, 0, 0}
+\definecolor{navyblue}{RGB}{0, 47, 92}
+\definecolor{turquoise}{RGB}{85, 179, 162}
+\definecolor{brightsky}{RGB}{0, 176, 223}
+\definecolor{lightred}{RGB}{196, 91, 46}
+\definecolor{purple}{RGB}{133, 30, 94}
+\definecolor{charcoal}{RGB}{54,69,79}
+\definecolor{gray}{RGB}{239, 239, 239}
+
+\setbeamercolor{structure}{fg=gray, bg=white}
+\setbeamercolor{frametitle}{fg=scarlet}
+\setbeamercolor{framesubtitle}{fg=scarlet}
+\setbeamercolor{alerted text}{fg=purple}
+
+% block color settings
+\setbeamercolor{block title}{bg=gray, fg=scarlet}
+\setbeamercolor{block body}{bg=gray}
+
+\setbeamercolor{block title example}{fg=turquoise!30!white,bg=turquoise!40!black}
+\setbeamercolor{block body example}{parent=normal text,bg=turquoise, fg=white}
+
+\setbeamercolor{block title alerted}{fg=lightred!30!white,bg=lightred!40!black}
+\setbeamercolor{block body alerted}{parent=normal text,bg=lightred, fg=white}
+
+\setbeamercolor{title}{fg=scarlet}
+\setbeamercolor{subtitle}{fg=scarlet}
+
+% Make all in-text citations dark gray
+\AtEveryCite{%
+  \footnotesize
+  \color{darkgray}%
+}
+
+\mode<all>

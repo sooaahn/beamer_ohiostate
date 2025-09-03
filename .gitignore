@@ -1,0 +1,4 @@
+*.log
+*.gz
+slides/*.tex
+slides/*.pdf

@@ -1,0 +1,28 @@
+\usepackage{tikz}
+
+\mode<presentation>
+
+\DeclareOptionBeamer{logo}{}
+\ExecuteOptionsBeamer{logo=} % Default value is empty
+\ProcessOptionsBeamer
+
+\setbeamertemplate{footline}{%
+        \includegraphics[height=0.5cm]{osulogo.png}%
+        \hfill%
+        \usebeamercolor[fg]{page number in head/foot}%
+        \usebeamerfont{page number in head/foot}%
+        \insertframenumber\,/\,\inserttotalframenumber\kern1em%
+ }
+
+% customisation for the title page
+\setbeamertemplate{title page}
+{
+	\usebeamerfont{title}{\usebeamercolor[fg]{title}\inserttitle}\par
+	\usebeamerfont{subtitle}{\usebeamercolor[fg]{subtitle}\insertsubtitle}\par
+	\bigskip
+	\usebeamerfont{author}\insertauthor\par
+	\usebeamerfont{institute}\insertinstitute\par
+	\usebeamerfont{date}\insertdate
+}
+\mode<all>
+\endinput
